@@ -21,4 +21,8 @@ object Application extends Controller {
       Ok("Volume: " + calculateVolume(value))
   }
 
+  def xiny(x:Int, y: Int) = Action {
+    Ok(s"Your X: ${x} and y: ${y}")
+  }
+
 }
