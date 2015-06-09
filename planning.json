@@ -1,0 +1,16 @@
+Box = {
+    h: 10,
+    w: 20,
+    d: 5,
+    
+}
+
+BoxFitness = {
+    outer: Box
+    inner: Box
+
+    mapping: {
+        outer.w => inner.x // how?
+        outer.d => inner.y // how?
+    }
+}
