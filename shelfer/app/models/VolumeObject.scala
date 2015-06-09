@@ -13,4 +13,14 @@ class VolumeObject(val h: Int, val w: Int, val d: Int){
     if (this.h > vol.h && this.w > vol.w && this.d > vol.d) true
     else false
   }
+  
+  def fitSome(x: Int, y: Int): Map = {
+      
+  }
+  
+  def position(vol: VolumeObject): Map = {
+      this.fitSome(vol.h, vol.w)
+      this.fitSome(vol.w, vol.d)
+      this.fitSome(vol.d, vol.h)
+  }
 }
